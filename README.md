@@ -35,3 +35,22 @@ draw:function(){
 	}
 }
 ```
+
+
+##Usage as Entity
+
+Require in main.js or game instance or place in level during level creation in Weltmeister
+```
+.requires(
+    'game.entities.touchbutton'
+)
+```
+
+Add to init if not set in Weltmeister
+```
+init: function() {
+    ig.input.bind( ig.KEY.MOUSE1, 'touch');
+    this.image = new ig.Image( 'media/proptile.jpg' );
+    ig.game.spawnEntity(EntityTouchbutton, 0,0,{action:'left', image:this.image, defaultTile:1, actionTile:0});
+}
+```
