@@ -1,6 +1,9 @@
 EjectaTouchButtons
 ==================
 
+This is similar to the other touch button plugins except it allows you to drag touch across the buttons to fire their events instead of having to stop touching the screen to start a new touch start event.  I also removed the support for other browser touch events to keep this small and focused on ejecta builds.
+
+
 ##Usage As A Plugin:
 
 
